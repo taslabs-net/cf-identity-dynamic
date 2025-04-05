@@ -1,4 +1,4 @@
-name = "identity-dynamic"
+name = "schenanigans-cf-identity"
 account_id = ""
 workers_dev = false
 compatibility_date = "2024-11-25"
@@ -6,20 +6,20 @@ main = "src/main.js"
 
 
 routes = [
-	{ pattern = "", custom_domain = true }	
+	{ pattern = "https://schenanigans.com/access-denied", custom_domain = true }	
 ]
 
 # wrangler kv:namespace create IDENTITY_DYNAMIC_THEME_STORE
 
 [[kv_namespaces]] 
 binding = "IDENTITY_DYNAMIC_THEME_STORE"
-id = "" # unique ID of the previously created namespace
+id = "80251d39cabc4302a4fa463127aa44a5" # unique ID of the previously created namespace
 
 [vars]
 # - BEARER_TOKEN (Defined with wrangler secret put)
-CORS_ORIGIN = "" # This should be the route pattern domain /debug (https://example.com/debug)
-ACCOUNT_ID = ""
-ORGANIZATION_ID = ""
+CORS_ORIGIN = "https://schenanigans.com/debug" # This should be the route pattern domain /debug (https://example.com/debug)
+ACCOUNT_ID = "b15ec51cdf96746b05cb3983874d65a2"
+ORGANIZATION_ID = "b15ec51cdf96746b05cb3983874d65a2"
 ORGANIZATION_NAME = ""
 DEBUG = "true"
 TARGET_GROUP = "" # Define the "special group" that you want to use for notification
