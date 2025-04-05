@@ -6,7 +6,7 @@ main = "src/main.js"
 
 
 routes = [
-	{ pattern = "https://schenanigans.com/access-denied", custom_domain = true }	
+	{ pattern = "https://schenanigans.com", custom_domain = true }	
 ]
 
 # wrangler kv:namespace create IDENTITY_DYNAMIC_THEME_STORE
