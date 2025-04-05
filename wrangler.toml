@@ -15,9 +15,9 @@ id = "80251d39cabc4302a4fa463127aa44a5" # unique ID of the previously created na
 CORS_ORIGIN = "https://schenanigans.com/debug" # This should be the route pattern domain /debug (https://example.com/debug)
 ACCOUNT_ID = "b15ec51cdf96746b05cb3983874d65a2"
 ORGANIZATION_ID = "b15ec51cdf96746b05cb3983874d65a2"
-ORGANIZATION_NAME = ""
+ORGANIZATION_NAME = "Schenanigans"
 DEBUG = "true"
-TARGET_GROUP = "schenanigans" # Define the "special group" that you want to use for notification
+TARGET_GROUP = "" # Define the "special group" that you want to use for notification
 [site]
 bucket = "./build" 
 [build]
